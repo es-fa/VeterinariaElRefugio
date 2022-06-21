@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado {
+    background: #3494E6; 
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6); 
+    background: linear-gradient(to right, #EC6EAD, #3494E6);   
+}
+
+#titulo {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+    color:#fff;
+}
+#subtitulos{
+    text-align: center;
+}
+p{
+    text-align:center;
+}
+#cuerpoindex{
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6); 
+    background: linear-gradient(to right, #EC6EAD, #3494E6);
+}
+#logo {
+    height: 95px;
+    float:left;
+    margin: 3px 20px;
+    
+}
+.menu{
+    background: #3494E6; 
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6); 
+    background: linear-gradient(to right, #EC6EAD, #3494E6); 
+    text-align: right;
+    height: 60px;
+    width: 100%;
+}
+.menu li {
+    list-style: none;
+    display:inline-block;
+    margin: 10px;
+    padding: 10px;
+}.menu li a{
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px;
+}
+li a #enlace, li a:hover{
+    background: #EC6EAD;
+    transition: .5s;
+}
+
+.carrusel_contenedor{
+    position: relative;
+
+}
+.carrusel_anterior,
+.carrusel_siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: black;
+    color: rgb(238, 236, 236);
+    opacity: 90%;
+}
+.carrusel_anterior:hover,
+.carrusel_siguiente:hover{
+    opacity: 100%;
+    background: rgb(3, 201, 3);
+}
+.carrusel_anterior{
+    left: 0px;
+}
+.carrusel_siguiente{
+    right: 0px;
+}
+.carrusel_lista{
+    overflow: hidden;
+}
+.carrusel_elemento{
+    text-align: center;
+    margin: 0px;
+}
+.carrusel-indicadores .glider-dot{
+    background: rgb(0, 0, 0);
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 90%;
+    border-radius: 25%;
+}
+.carrusel-indicadores .glider-dot:hover{
+    background: rgb(14, 233, 233);
+}
