@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <script src="./main.js"></script>
+</head>
+<body class="cuerpoRegistro">
+    <header class="encabezado">
+        <nav class="menu">
+            <ul>
+                <li><a id="enlace" href="index.html">Pagina Principal</a></li>
+                <li><a id="enlace" href="Agenda.html">Agendar cita</a></li>
+                <li><a id="enlace" href="Productos.html">Productos</a></li>
+                <li><a id="enlace" href="Servicios.html">Servicios</a></li>
+                <li><a id="enlace" href="Registros.html">Registrarse</a></li>
+                <li><a id="enlace" href="Inicio_Sesion.html">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="form-registro" id="formularioRegistro" onsubmit="return compararPassword()">
+        <div class="form">
+        <h2 class="tituloFormulario">Registrate</h2>
+            <label>Nombre de usuario</label><br>
+            <input id="usuario" type="text" minlength="5" maxlength="15"  pattern="[A-Z|a-z|_|0-9]+"><br>
+            <label>Correo</label><br>
+            <input type="email" id="correo" minlength="8"><br>
+            <label>Password</label><br>
+            <input type="password" id="contraseña1" minlength="6" pattern="[A-Z|a-z|0-9]+"><br>
+            <label>Verifica tu Password</label><br>
+            <input type="password" id="contraseña2" minlength="6" pattern="[A-Z|a-z|0-9]+"><br>
+            <button class="boton" type="submit">Registrar</button>
+            <div id="textpantalla"></div>
+        </div>
+    </form>
+</body>
+</html>

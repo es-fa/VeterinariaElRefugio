@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El refugio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo"><img src="./logo1.png" alt="logo"></div>
+        <div class="nombre"><h1>El Refugio</h1></div>
+        <nav class="menu">
+            <ul>
+                <li><a id="enlace" href="Agenda.html">Agendar cita</a></li>
+                <li><a id="enlace" href="Productos.html">Productos</a></li>
+                <li><a id="enlace" href="Servicios.html">Servicios</a></li>
+                <li><a id="enlace" href="Registros.html">Registrarse</a></li>
+                <li><a id="enlace" href="Inicio_Sesion.html">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carrusel">
+        <div class="carrusel_contenedor">
+            <button aria-label="anterior" class="carrusel_anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="carrusel_lista">
+                <div class="carrusel_elemento">
+                    <img src="./1.jpg" alt="">
+                        <p>imagen1</p>
+                    </img>
+                </div>
+                <div class="carrusel_elemento">
+                    <img src="./2.jpg" alt="">
+                        <p>imagen2</p>
+                    </img>
+                </div>
+                <div class="carrusel_elemento">
+                    <img src="./3.jpg" alt="">
+                        <p>imagen3</p>
+                    </img>
+                </div>
+                <div class="carrusel_elemento">
+                    <img src="./4.jpg" alt="">
+                        <p>imagen4</p>
+                    </img>
+                </div>
+            </div>
+            <button aria-label="siguiente" class="carrusel_siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div role="tablist" class="carrusel-indicadores"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.js"></script>
+    <script src="https://kit.fontawesome.com/307abc6f44.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+    <!--<div id="cuerpoindex">
+        
+        <div class="texto">
+            <h2 id="subtitulos">¿Quienes somos?</h2>
+            <p>somos un grupo de medicos especializados en el cuidado de las mascotas</p>
+            <p>porque sabes de la importancia que toma dentro de la familia.</p>
+        </div>
+        
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823010.8608990152!2d-99.66592719843973!3d19.625567903480032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f4004f0364f7%3A0x1d61381634a9ec93!2sVeterinaria%20%22El%20Refugio%22!5e1!3m2!1ses!2smx!4v1652850429278!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>-->
+    <footer class="piePagina">
+        <div class="infEmpresa">
+            <ul>
+                <img src="./tyc.png" alt="TyC"><li>Terminos y Condiciones</li>
+                <img src="./gdpr.png" alt="Privacidad"><li>Privacidad de datos</li>
+                <img src="./llamada.png" alt="Telefono"><li>123 456 789</li>
+                <img src="./correo-electronico.png" alt="Correo"><li>Refugio@gmail.com</li>
+            </ul>
+        </div>
+    </footer>    
+</body>
+
+</html>
