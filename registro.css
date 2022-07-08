@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cuerpoRegistro form {
+    height: 550px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#formularioRegistro {
+    width: 100%;
+    margin: auto;
+}
+#formularioRegistro input:valid{
+    background: white;
+}
+#formularioRegistro input:invalid{
+    background: rgb(255, 3, 87);
+}
+.boton{
+    padding: 5px;
+    margin: 15px;
+    width: 200px;
+}
